@@ -11,7 +11,7 @@
 .sch{
     align-self: center;
 }
-h1{
+.txt{
     color: var(--t-color);
     text-decoration: underline;
 }
@@ -50,49 +50,49 @@ background-color: var(--radio-color);
 
 #light{
 --radio-color: rgb(150, 13, 38);
---t-color:rgb(150, 13, 38);
 }
 
 
 #blue {
 --radio-color: rgb(49, 156, 192);
---t-color:rgb(49, 156, 192);
 }
 
 #pink {
 --radio-color: rgb(233, 46, 155);
---t-color: rgb(233, 46, 155);
 }
 
 #green {
 --radio-color: rgb(19, 177, 42);
---t-color: rgb(19, 177, 42);
 }
 
 #grey {
 --radio-color: rgb(155, 154, 154);
---t-color: black;
 }
 
 :root:has(#light:checked) {
 background-color: red;
+--t-color:rgb(150, 13, 38);
 }
 
 :root:has(#grey:checked) {
 
 background-color: rgba(216, 216, 216, 0.844);
+--t-color: black;
 }
 
 :root:has(#blue:checked) {
 background-color: lightblue;
+--t-color:rgb(49, 156, 192);
 }
 
 :root:has(#pink:checked) {
 background-color: pink;
+--t-color: rgb(233, 46, 155);
 }
 
 :root:has(#green:checked) {
 background-color: green;
+--t-color: rgb(19, 177, 42);
 }
 .moviess{
 border: 5px solid rgb(177, 177, 177);
