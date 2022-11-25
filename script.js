@@ -6,10 +6,8 @@ form.addEventListener("submit", (e) => {
 });
 function search_movie() {
     var url_2 = `https://api.tvmaze.com/search/shows?q=${search.value}`;
-    // console.log(search.value);
     fetch(url_2)
         .then((res) => {
-            // console.log(res.json());
             return res.json();
         })
         .then((data) => {
@@ -31,4 +29,3 @@ function add_search(data) {
       search_movies.style.visibility = "visible";
     
   };
-// search_movie();
